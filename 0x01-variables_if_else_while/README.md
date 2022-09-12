@@ -1,1 +1,1 @@
-Learning C variables, if, else, while
+Learning C Variables, if, else, while
