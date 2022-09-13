@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-/** 
- * main - Print digit numbers
+/**
+ * main - Print the digit numbers
  *
  * Return: 0
  */
@@ -11,7 +11,7 @@ int main(void)
 
 	for (i = 0; i < 10; i++)
 	{
-		printf("%d", i);
+		printf(%d", i);
 	}
 	putchar('\n');
 	return (0);
