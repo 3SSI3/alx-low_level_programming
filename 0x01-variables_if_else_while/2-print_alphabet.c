@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  * main - print if the number is positive, zero, or negative
  *
@@ -8,11 +9,13 @@
  */
 int main(void)
 {
-	char c;
+	char alp[26] = "abcdefghijklmnopqrstuvwxyz";
+	int i;
 
-	for (c = 'a'; c <= 'z'; c++)
-		putchar(c);
-	        putchar('\n');
-
-return (0);
+	for (i = 0; i < 26; i++)
+	{
+		putchar(alp[i]);
+	}
+	putchar('\n');
+	return (0);
 }
