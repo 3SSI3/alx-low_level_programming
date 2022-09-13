@@ -33,11 +33,11 @@ int main(void)
 					putchar(',');
 					putchar(' ');
 				}
-				g++
+				g++;
 			}
-			i++
+			i++;
 		}
-		e++
+		e++;
 	}
 	putchar('\n');
 	return (0);
