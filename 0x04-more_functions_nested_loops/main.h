@@ -20,4 +20,4 @@ void print_number(int n);
 int _putchar(char);
 void print_square(int size);
 
-#endif /* MAIN_H */
+#endif
