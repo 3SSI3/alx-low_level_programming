@@ -7,7 +7,7 @@
  * @src: source array
  * Return: Pointer to destination array
  */
-char *_strcpy(char *dest, char *src);
+char *_strcpy(char *dest, char *src)
 {
 	int i = o;
 
