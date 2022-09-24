@@ -3,8 +3,8 @@
 /**
  * string_toupper - changes all lowercase letters of a string,
  * to uppercase.
- * @j: string input
- * Return: pointer to dest
+ * @j: pointer
+ * Return: j
  */
 char *string_toupper(char *j)
 {
