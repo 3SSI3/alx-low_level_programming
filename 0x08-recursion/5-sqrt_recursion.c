@@ -29,7 +29,7 @@ int _sqrt_recursion(int n)
 		return (-1);
 	if (n == 0)
 		return (0);
-	if (m == 1)
+	if (n == 1)
 		return (1);
 	return (power_operation(n, 2));
 }
