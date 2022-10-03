@@ -1,14 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - prints the minimum number of coins to make change for an amount of money.
- * @argc: argument count
- * @argv: argument vector
- * Return: 0
+ * main - prints the minimum number of coins to make change for an amount.
+ * of money.
+ * @argc: number of command line arguments.
+ * @argv: array that contains the program command line arguments.
+ * Return: 0 - success.
  */
 int main(int argc, char *argv[])
 {
-	int cents, ncents = 0;
+	int cents, ncoins = 0;
 
 	if (argc == 1 || argc > 2)
 	{
@@ -30,8 +31,8 @@ int main(int argc, char *argv[])
 			cents -= 2;
 		else if (cents >= 1)
 			cents -= 1;
-		ncents += 1;
+		ncoins += 1;
 	}
-	printf("%d\n", ncents);
+	printf("%d\n", ncoins);
 	return (0);
 }
