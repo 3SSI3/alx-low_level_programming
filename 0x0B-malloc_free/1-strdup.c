@@ -11,7 +11,7 @@ char *_strdup(char *str)
 	char *strout;
 	unsigned int a, b;
 
-	if (str = NULL)
+	if (str == NULL)
 		return (NULL);
 
 	for (a = 0; str[a] != '/0'; a++)
