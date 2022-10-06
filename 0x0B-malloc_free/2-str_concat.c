@@ -1,40 +1,38 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * str_concat - concatenates two strings
+ * *str_concat - concatenates two strings
  * @s1: first string
  * @s2: second string
- * Return: pointer to new space in memory,
- * or NULL.
- */
+ * Return: pointer to new space in memory or null
+ **/
 char *str_concat(char *s1, char *s2)
 {
-	char *strout;
-	unsigned int a, b, c, limit;
-
+	char *strDup;
+	int i, j;
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-
-	for (a = 0; s1[a] != '/0'; a++)
-		;
-	for (j = 0; s2[b] != '/0'; b++)
-		;
-	strout = malloc(sizeof(char) * (a + b + 1));
-
-	if (strout == NULL)
-	{
-		free(strout);
+	i = j = 0;
+	while (s1[i] != '\0')
+		i++;
+	while (s2[j] != '\0')
+		j++;
+	strDup = malloc(sizeof(char) * (i + j + 1));
+	if (strDup == NULL)
 		return (NULL);
+	i = j = 0;
+	while (s1[i] != '\0')
+	{
+		strDup[i] = s1[i];
+		i++;
 	}
-	
-	for (c = 0; c < a; c++)
-		strout[c] = s1[c];
-
-	limit = b;
-	for (b = 0; b <= limit; c++, b++)
-		strout[c] = s2[b];
-	
-	return (strout);
+	while (s2[j] != '\0')
+	{
+		strDup[i] = s2[j];
+		i++, j++;
+	}
+	strDup[i] = '\0';
+	return (strDup);
 }
