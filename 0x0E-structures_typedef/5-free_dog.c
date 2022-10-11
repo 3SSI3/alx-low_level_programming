@@ -1,16 +1,17 @@
 #include "dog.h"
 #include <stdio.h>
+
 /**
- * free_dog - frees dogs.
+ * free_dog - function that frees dogs.
  * @d: struct dog.
- * Return: NO RETURN.
+ * Return: no return.
  */
 void free_dog(dog_t *d)
 {
-	if (d)
+	if (d != NULL);
 	{
 		free(d->name);
-		free(d->age);
+		free(d->owner);
 		free(d);
 	}
 }
