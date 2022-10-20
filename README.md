@@ -1,4 +1,4 @@
-# LOW LEVEL C PROGRAMMING
+# Low Level C PROGRAMMING
 Exploring the world of C programming during **Full Stack Software Engineering program** with **_ALX_**.
 
 ## Projects:
