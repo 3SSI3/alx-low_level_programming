@@ -1,6 +1,4 @@
 #include "lists.h"
-#include <stddef.h>
-#include <stdlib.h>
 /**
  * list_len - finds the number of nodes in a list
  * @h: singly linked list
@@ -8,9 +6,17 @@
  */
 size_t list_len(const list_t *h)
 {
-	int i;
+	size_t j;
 
-	for (i = 0; h; i++)
+	j = 0;
+	if (h == NULL)
+	{
+		return (0);
+	}
+	while (h != NULL)
+	{
 		h = h->next;
-	return (i);
+		j++;
+	}
+	return (j);
 }
