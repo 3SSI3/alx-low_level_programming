@@ -8,7 +8,7 @@
  *
  * Return: number of bits
  */
-usigned int flip_bits(unsigned long int n, unsigned long int m)
+usigned int flip_bits(unsigned long int n, unsigned long int m);
 {
 	unsigned int bits;
 	
