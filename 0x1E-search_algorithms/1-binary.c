@@ -10,28 +10,28 @@
  * Array will be sorted in ascending order
  * Value won't appear more than once in array
  */
-int binary_search(int *array, size_t size, int value);
+int binary_search(int *array, size_t size, int value)
 {
-    size_t j, rigt, left;
+	size_t j, left, right;
 
-    if (array == NULL)
-	    return (-1);
+	if (array == NULL)
+		return (-1);
 
-    for (left = 0, rigt = size - 1; rigt >= left;)
-    {
-	    printf("Searching in array: ");
-	    for (i = left; i < rigt; i++)
-		    printf("%d, ", array[i]);
-	    printf("%d\n", array[i]);
+	for (left = 0, right = size - 1; right >= left;)
+	{
+		printf("Searching in array: ");
+		for (j = left; j < right; j++)
+			printf("%d, ", array[j]);
+		printf("%d\n", array[j]);
 
-	    i = left + (rigt - left) / 2;
-	    if (array[i] == value)
-		    return (i);
-	    if (array[i] > value)
-		    rigt = i - 1;
-	    else
-		    left = i + 1;
-    }
-    
-    return (-1);
+		j = left + (right - left) / 2;
+		if (array[j] == value)
+			return (i);
+		if (array[j] > value)
+			right = j - 1;
+		else
+			left = j + 1;
+	}
+
+	return (-1);
 }
